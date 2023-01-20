@@ -1,8 +1,12 @@
+
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
 money = pd.read_csv("money_data7.csv")
+
+st.title('This is a title')
+st.title('A title with _italics_ :blue[colors] and emojis :sunglasses:')
 
 
 option = st.selectbox(
