@@ -6,8 +6,7 @@ import matplotlib.pyplot as plt
 money = pd.read_csv("money_data7.csv")
 
 
-st.title('_3년간의_')
-st.title( ':blue[미국금리] ,:blue[한국금리],:blue[코스피지수],:blue[집값] 데이터 :sunglasses:')
+st.title('_3년간의_ :blue[미국금리] ,:blue[한국금리],:blue[코스피지수],:blue[집값] 데이터 :sunglasses:')
 
 
 option = st.selectbox(
