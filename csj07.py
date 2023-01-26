@@ -51,5 +51,5 @@ with st.form(key ='Form1'):
         select_language = st.sidebar.radio('What do you want ?', ('line graph', 'bar graph', 'pie graph', 'histogram graph', 'corr graph','word cloud','box graph'))
         
         
-if select_language =='line':        
+if select_language =='line graph':        
     plotting_demo()      
