@@ -16,7 +16,7 @@ def  plotting_demo():
 
     option2 = int(option)
 
-    st.write('You selected:', option)
+    st.write('현재 선택년도 :', option)
 
     money = money[:] [money['A_YEAR']== option2]
 
@@ -72,7 +72,7 @@ def bar_chart():
 
     option2 = option
 
-    st.write('You selected:', option)
+    st.write('현재 선택년도 : ', option)
 
     df7  =  baseball[:] [ baseball.년도==option2 ]
     x = df7.팀
