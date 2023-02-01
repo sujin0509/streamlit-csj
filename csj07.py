@@ -94,15 +94,15 @@ def bar_chart():
 with st.form(key ='Form1'):
     with st.sidebar:
         
-        select_language = st.sidebar.radio('What do you want ?', ('line', 'bar', 'pie'))
+        select_language = st.sidebar.radio('What do you want ?', ('금리와 집값 빠르게 파악하기', '야구 순위와 승률 빠르게 파악하기', '다른데이터 분석'))
         
         
-if select_language =='line':           
+if select_language =='금리와 집값 빠르게 파악하기':           
     try:
           plotting_demo()  
     except:      
           pass
 
         
-elif select_language =='bar':
+elif select_language =='야구 순위와 승률 빠르게 파악하기':
     bar_chart()
