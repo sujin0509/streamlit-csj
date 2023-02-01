@@ -7,8 +7,7 @@ import numpy as np
 def  plotting_demo():
     
     #uploaded_file = st.file_uploader("Choose a file")
-
-   # money=pd.read_csv(uploaded_file)
+    # money=pd.read_csv(uploaded_file)
     money = pd.read_csv("money_data7.csv")
 
     option = st.selectbox(
@@ -48,6 +47,8 @@ def  plotting_demo():
     st.dataframe(money)
        
 
+        
+        
 def bar_chart():
 
     url = "https://sports.news.naver.com/kbaseball/record/index?category=kbo&year="
@@ -89,6 +90,10 @@ def bar_chart():
     st.pyplot(fig)
     st.dataframe(df7)
 
+     
+        
+        
+st.set_page_config(layout="centered")          
         
 
 with st.form(key ='Form1'):
@@ -98,10 +103,8 @@ with st.form(key ='Form1'):
         
         
 if select_language =='금리와 집값 빠르게 파악하기':           
-    try:
-          plotting_demo()  
-    except:      
-          pass
+    plotting_demo()  
+    
 
         
 elif select_language =='야구 순위와 승률 빠르게 파악하기':
