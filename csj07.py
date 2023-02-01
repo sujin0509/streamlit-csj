@@ -23,23 +23,23 @@ def  plotting_demo():
     fig, ax = plt.subplots(2,2, figsize=(12,8))
 
     plt.subplot(221)
-    plt.plot(  list( money['A_MONTH'] ), list( money['A_RATE'] ), color='red' , marker='o'     ) 
+    plt.plot(  list( money['A_MONTH'] ), list( money['A_RATE'] ), color='lightcoral' , marker='o'     ) 
     plt.xticks(tuple(money['A_MONTH']) )
     plt.title('America rate')
 
 
     plt.subplot(222)
-    plt.plot(  list( money['A_MONTH'] ), list( money['K_RATE'] ), color='blue' , marker='o'     ) 
+    plt.plot(  list( money['A_MONTH'] ), list( money['K_RATE'] ), color='lightsteelblue' , marker='o'     ) 
     plt.xticks(tuple(money['A_MONTH']) )
     plt.title('Korea rate')
 
     plt.subplot(223)
-    plt.plot(  list( money['A_MONTH'] ), list( money['KOSPI'] ), color='green' , marker='o'     ) 
+    plt.plot(  list( money['A_MONTH'] ), list( money['KOSPI'] ), color='darkseagreen' , marker='o'     ) 
     plt.xticks(tuple(money['A_MONTH']) )
     plt.title('Kospi Rate')
 
     plt.subplot(224)
-    plt.plot(  list( money['A_MONTH'] ), list( money['HOUSE_PRICE'] ), color='yellow' , marker='o'     ) 
+    plt.plot(  list( money['A_MONTH'] ), list( money['HOUSE_PRICE'] ), color='peru' , marker='o'     ) 
     plt.xticks(tuple(money['A_MONTH']) )
     plt.title('House Price')
 
