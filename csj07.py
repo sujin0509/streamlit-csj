@@ -82,9 +82,9 @@ def bar_chart():
     x = df7.팀
     y = df7.승률
     
-    global  aa
+    global  bb
     
-    aa = baseball
+    bb = df7
     
     fig, ax = plt.subplots(figsize=(12,8))
 
@@ -131,5 +131,5 @@ elif select_language =='야구 순위와 승률 빠르게 파악하기':
         
     with tab2:
         tab2.subheader("A tab with the data")
-        st.dataframe(aa)
+        st.dataframe(bb)
         
