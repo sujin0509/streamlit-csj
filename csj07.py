@@ -20,9 +20,9 @@ def  plotting_demo():
 
     money = money[:] [money['A_YEAR']== option2]
     
-    global  bb
+    global  aa
     
-    bb = money
+    aa = money
 
     fig, ax = plt.subplots(2,2, figsize=(12,8))
 
@@ -131,4 +131,4 @@ elif select_language =='야구 순위와 승률 빠르게 파악하기':
         
     with tab4:
         tab4.subheader("A tab with the data")
-        st.dataframe(bb)
+        st.dataframe(aa)
